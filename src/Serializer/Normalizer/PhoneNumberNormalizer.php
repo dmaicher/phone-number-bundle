@@ -65,7 +65,7 @@ class PhoneNumberNormalizer implements NormalizerInterface, DenormalizerInterfac
      *
      * @throws InvalidArgumentException
      */
-    public function normalize($object, $format = null, array $context = [])
+    public function normalize($object, ?string $format = null, array $context = [])
     {
         return $this->phoneNumberUtil->format($object, $this->format);
     }

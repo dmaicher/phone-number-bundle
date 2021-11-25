@@ -22,6 +22,7 @@ jobs:
             stability: dev
           - php: '8.1'
             mode: experimental
+      fail-fast: false
 
     steps:
       - name: Checkout
